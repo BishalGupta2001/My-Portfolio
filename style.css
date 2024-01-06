@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background: #080808;
   color: #fff;
@@ -354,6 +358,16 @@ form .btn2 {
 }
 
 /* hemburger and x bar */
-.l{
+#jak{
   display: none;
+}
+
+#jakk{
+  display: none;
+}
+
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }

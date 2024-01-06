@@ -19,15 +19,15 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact</a></li>
-            <i class="fa-solid fa-xmark"></i>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" id="jak" onclick="closeMenu()"></i>
           </ul>
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"id="jakk"  onclick="openMenu()"></i>
         </nav>
         <div class="header-text">
           <p>Frontend Web Developer</p>
@@ -137,7 +137,7 @@
         </div>
       </div>
     </div>
-    <!---------------------------portfolio--------------------------->
+    <!---------------------------my work--------------------------->
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">My Work</h1>
@@ -151,7 +151,7 @@
                 bag section as functinal you can select product and add to bag
                 for to see the function
               </p>
-              <a href=""
+              <a href="" 
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -208,12 +208,13 @@
 
           </div>
           <div class="contact-right">
-            <form>
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required>
               <input type="email" name="Email" placeholder="Your Email" required >
               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
@@ -224,5 +225,23 @@
     </div>
 
     <script src="main.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwow0MJFJ3_B-cVO5hwPyWa7bUSjKSG4PVcMTwhbJ4OoBg28if2qpCREzcykvsyx2A/exec'
+      const form = document.forms['submit-to-google-sheet']
+      let msg = document.querySelector("#msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>{
+            msg.innerHTML =`Message Sent Sucessfully`;
+            setTimeout(function (){
+              msg.innerHTML =``;
+            },4000)
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>

@@ -10,32 +10,56 @@
     font-size: 30px;
   }
 
-  nav .fa-solid {
+  #jak , #jakk{
     display: block;
     font-size: 25px;
   }
-  /* nav .fa-bars {
-    display: block;
-    font-size: 25px;
-  } */
 
   nav ul {
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -200px;
     width: 200px;
     height: 100vh;
     padding-top: 50px;
+    z-index: 2;
+    transition: 0.5s;
   }
   nav ul li {
     display: block;
     margin: 25px;
   }
-  .fa-solid {
+  #jak {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
+  }
+  .sub-tile{
+    font-size: 40px;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    line-height: 28px;
+    font-size: 17px;
+  }
+  .about-col-2 p{
+    margin-top:2.5rem;
+  }
+  .tab-links{
+    font-size: 16px;
+  }
+
+  .contact-left, .contact-right{
+    flex-basis: 100%; 
+  }
+  .copyright{
+    font-size: 14px;
   }
 }
