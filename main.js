@@ -1,7 +1,6 @@
 let tabLinks = document.querySelectorAll(".tab-links");
 let tabContents = document.querySelectorAll(".tab-contents");
 
-
 function openTab(evt) {
   for (let tabLink of tabLinks) {
     tabLink.classList.remove("active-link");
@@ -25,5 +24,3 @@ function openMenu() {
 function closeMenu() {
   sideMenu.style.right = "-200px";
 }
-
-

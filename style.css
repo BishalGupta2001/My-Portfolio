@@ -225,8 +225,8 @@ nav ul li a:hover::after {
   transition: transform 0.7s;
 }
 
-#work-img{
-  height:100%;
+#work-img {
+  height: 100%;
 }
 
 .layers {
@@ -381,4 +381,34 @@ form .btn2 {
   color: #61b752;
   margin-top: -40px;
   display: block;
+}
+
+/* -----------------adding my expertise in last ------------------------*/
+.skills {
+  text-align: center;
+  background: #201f1f;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills__header {
+  color: #ff004f;
+}
+
+.skills__text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

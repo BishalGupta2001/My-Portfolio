@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/black-phn-2\ \(2\).png);
+    background-image:url(images/black-phn-2\ \(2\).png);
   }
   .header-text {
     margin-top: 160%;
@@ -11,7 +11,8 @@
     font-size: 30px;
   }
 
-  #jak , #jakk{
+  #jak,
+  #jakk {
     display: block;
     font-size: 25px;
   }
@@ -37,30 +38,46 @@
     left: 25px;
     cursor: pointer;
   }
-  .sub-tile{
+  .sub-tile {
     font-size: 40px;
   }
-  .about-col-1, .about-col-2{
+  .about-col-1,
+  .about-col-2 {
     flex-basis: 100%;
   }
-  .about-col-1{
+  .about-col-1 {
     margin-bottom: 30px;
   }
-  .about-col-2{
+  .about-col-2 {
     line-height: 28px;
     font-size: 17px;
   }
-  .about-col-2 p{
-    margin-top:2.5rem;
+  .about-col-2 p {
+    margin-top: 2.5rem;
   }
-  .tab-links{
+  .tab-links {
     font-size: 16px;
   }
 
-  .contact-left, .contact-right{
-    flex-basis: 100%; 
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
   }
-  .copyright{
+  .copyright {
     font-size: 14px;
+  }
+
+  .skills {
+    text-align: center;
+    background: #201f1f;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem;
+    position: relative;
+    overflow: hidden;
+    height: 4rem;
+  }
+  .skills__header {
+    margin-bottom: 2%;
   }
 }
