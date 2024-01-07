@@ -1,12 +1,13 @@
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/phone-background.png);
+    background-image: url(images/black-phn-2\ \(2\).png);
   }
   .header-text {
-    margin-top: 100%;
+    margin-top: 160%;
+    margin-left: 15%;
     font-size: 16px;
   }
-  header-text h1 {
+  .header-text h1 {
     font-size: 30px;
   }
 

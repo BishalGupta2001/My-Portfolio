@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -16,12 +16,20 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/background.png);
+  background-image: url(images/b2.png);
   background-size: cover;
   background-position: center;
 }
 .container {
   padding: 10px 10%;
+}
+
+.container h1 {
+  font-size: 3rem;
+}
+
+.container h1 span {
+  color: #ff004f;
 }
 
 nav {
@@ -110,7 +118,6 @@ nav ul li a:hover::after {
   margin-bottom: 5%;
 }
 
-
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
@@ -150,58 +157,58 @@ nav ul li a:hover::after {
 }
 
 .tab-contents {
-    display: none;
+  display: none;
 }
 
-.tab-contents.active-tab{
-    display: block;
+.tab-contents.active-tab {
+  display: block;
 }
 /*----------------- services --------------------*/
-#services{
-    padding: 30px 0;
+#services {
+  padding: 30px 0;
 }
 
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap:40px;
-    margin-top: 50px;
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 .services-list h2 {
-    text-decoration: underline;
-    /* color: #bc3862; */
-    margin-bottom: 15px;
-    font-size: 1.8rem;
+  text-decoration: underline;
+  /* color: #bc3862; */
+  margin-bottom: 15px;
+  font-size: 1.8rem;
 }
 .services-list div {
-    background: #262626;
-    padding: 40px;
-    font-size: 15px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition:  0.5s , transform 0.5s;
+  background: #262626;
+  padding: 40px;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: 0.5s, transform 0.5s;
 }
 
-.services-list div p{
-    letter-spacing: 0.5px;
+.services-list div p {
+  letter-spacing: 0.5px;
 }
 
-.services-list div:hover{
-    background: #871539;
-    transform: scale(1.01);
-    transition-timing-function:ease-in ;
+.services-list div:hover {
+  background: #871539;
+  transform: scale(1.01);
+  transition-timing-function: ease-in;
 }
 
-/* portfolio------------------------------------ */
+/* -----------------My work------------------------------------ */
 
-.portfolio{
+.portfolio {
   padding: 50px 0;
 }
 
-.work-list{
+.work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap:40px;
+  grid-gap: 40px;
   margin-top: 50px;
 }
 
@@ -218,10 +225,14 @@ nav ul li a:hover::after {
   transition: transform 0.7s;
 }
 
-.layers{
+#work-img{
+  height:100%;
+}
+
+.layers {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -242,16 +253,16 @@ nav ul li a:hover::after {
   margin-bottom: 20px;
 }
 
-.layers a{
+.layers a {
   margin-top: 20px;
-  color:  #ff004f;
+  color: #ff004f;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
   background: #fff;
   width: 60px;
   height: 60px;
-  border-radius:50px;
+  border-radius: 50px;
   text-align: center;
 }
 
@@ -269,31 +280,30 @@ nav ul li a:hover::after {
   width: fit-content;
   border: 1px solid #ff004f;
   padding: 14px 50px;
-  border-radius:6px;
+  border-radius: 6px;
   text-decoration: none;
   color: #fff;
   background: transparent; /*my add*/
   cursor: pointer;
-  transition: 0.5s ;
+  transition: 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
   background: #ff004f;
-
 }
 
 /* ---------------contact us---------------------------- */
 
-.contact-left{
+.contact-left {
   flex-basis: 35%;
 }
 
-.contact-right{
+.contact-right {
   flex-basis: 60%;
 }
 
 .contact-left p {
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 .contact-left p i {
@@ -302,7 +312,7 @@ nav ul li a:hover::after {
   font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
   margin-top: 30px;
 }
 
@@ -312,27 +322,28 @@ nav ul li a:hover::after {
   margin-right: 14px;
   color: #ababab;
   display: inline-block;
-  transition: 0.5s ;
+  transition: 0.5s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
   color: #ff004f;
   transform: translateY(-5px);
 }
 
-.btn.btn2{ 
+.btn.btn2 {
   display: inline-block;
 }
 
-.contact-right form{
+.contact-right form {
   width: 100%;
 }
 
-form input, form textarea{
+form input,
+form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #262626;;
+  background: #262626;
   padding: 15px;
   margin: 15px 0;
   color: #fff;
@@ -348,7 +359,7 @@ form .btn2 {
 
 /* copyright sec */
 
-.copyright{
+.copyright {
   width: 100%;
   text-align: center;
   padding: 25px 0;
@@ -358,15 +369,15 @@ form .btn2 {
 }
 
 /* hemburger and x bar */
-#jak{
+#jak {
   display: none;
 }
 
-#jakk{
+#jakk {
   display: none;
 }
 
-#msg{
+#msg {
   color: #61b752;
   margin-top: -40px;
   display: block;
