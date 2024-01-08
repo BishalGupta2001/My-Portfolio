@@ -412,3 +412,25 @@ form .btn2 {
     transform: translateX(-100%);
   }
 }
+
+/* side scroll bar */
+
+/* Scrollbar side ma scrollbar arha hai uska width diye hain*/
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track andar k track ka color */
+::-webkit-scrollbar-track {
+	background: rgb(29, 29, 29);
+}
+
+/* Handle  ek bar hai  uska color */
+::-webkit-scrollbar-thumb {
+	background: #424242;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #343434;
+}
